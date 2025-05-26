@@ -88,7 +88,7 @@ const ChatInterface = () => {
         setIsLoading(true);
 
         try {
-            const response = await axios.post('http://localhost:8000/api/query', {
+            const response = await axios.post('https://wikibot-backend.onrender.com/api/query', {
                 query: input,
                 conversation_history: messages,
             });
